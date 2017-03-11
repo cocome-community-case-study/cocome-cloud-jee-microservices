@@ -1,0 +1,11 @@
+**/.settings/**
+**/target/**
+**/.project
+**/.checkstyle
+**/.classpath
+settings.xml
+.settings/**
+.project
+target/**
+.checkstyle
+.classpath
