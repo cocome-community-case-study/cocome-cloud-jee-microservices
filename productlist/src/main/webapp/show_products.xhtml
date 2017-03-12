@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:util="http://java.sun.com/jsf/components/util">
+
+	<h:dataTable value="#{product_list_provider.products}" var="product"
+		styleClass="product-table" headerClass="product-table-header"
+		rowClasses="product-table-odd-row,product-table-even-row"
+		columnClasses="product-table-text-col, product-table-text-col, 
+    				product-table-text-col">
+		<h:column>
+			<f:facet name="header">#{strings['product.table.header_barcode']}Barcode</f:facet>
+			#{product.barcode}
+		</h:column>
+		<h:column>
+			<f:facet name="header">#{strings['product.table.header_name']}Product Name</f:facet>
+			#{product.name}
+		</h:column>
+		<h:column>
+			<f:facet name="header">#{strings['product.table.header_purchase_price']}Purchase Price</f:facet>
+			<h:outputText value="#{product.purchasePrice}">
+				<f:convertNumber type="currency" currencySymbol="€" />
+			</h:outputText>
+		</h:column>
+	</h:dataTable>
+
+</ui:composition>

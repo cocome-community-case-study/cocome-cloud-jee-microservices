@@ -46,12 +46,6 @@ public class StoreInformation implements IStoreInformation, Serializable {
 	private StoreViewData activeStore;
 	private boolean hasChanged = false;
 
-//	@Inject
-//	IEnterpriseQuery enterpriseQuery;
-//
-//	@Inject
-//	IStoreQuery storeQuery;
-
 	@Inject
 	IStoreDAO storeDAO;
 	
