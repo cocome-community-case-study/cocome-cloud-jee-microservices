@@ -1,0 +1,3 @@
+FROM airhacks/payara
+ENV ARCHIVE_NAME cloud-registry-service-1.1.war
+COPY ./cloud-registry-service/target/cloud-registry-service-1.1.war ${DEPLOYMENT_DIR}

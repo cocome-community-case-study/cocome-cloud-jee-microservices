@@ -1,0 +1,3 @@
+FROM airhacks/payara
+ENV ARCHIVE_NAME enterprise-logic-ear-1.1.ear
+COPY ./cloud-enterprise-logic/enterprise-logic-ear/target/enterprise-logic-ear-1.1.ear ${DEPLOYMENT_DIR}

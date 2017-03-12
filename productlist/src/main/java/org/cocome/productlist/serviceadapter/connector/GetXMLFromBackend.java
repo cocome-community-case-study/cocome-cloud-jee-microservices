@@ -18,10 +18,10 @@ import org.cocome.productlist.serviceadapter.parsing.MessageToCSV;
 public class GetXMLFromBackend implements IBackendQuery {
 	
 	//@Inject
-	private String backendHost = "172.20.140.158";
+	private String backendHost = "service-adapter";
 	
 	//@Inject
-	private String backendPort = "8280";
+	private String backendPort = "8080";
 	
 	//@Inject
 	private String backendGetDataURL = "/de.kit.ipd.cocome.cloud.serviceadapter/Services/Database/GetData";

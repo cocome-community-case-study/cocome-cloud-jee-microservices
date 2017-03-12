@@ -1,0 +1,3 @@
+FROM airhacks/payara
+ENV ARCHIVE_NAME store-logic-ear.ejb
+COPY ./cloud-store-logic/store-logic-ear/target/store-logic-ear-1.1.ear ${DEPLOYMENT_DIR}

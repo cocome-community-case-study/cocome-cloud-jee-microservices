@@ -2,31 +2,31 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                           http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    
+
 
 	<profiles>
 		<profile>
 			<id>cocome-shop-context</id>
 			<properties>
-				<!-- Configuration for the registry connection. Adjust these settings 
+				<!-- Configuration for the registry connection. Adjust these settings
 					to match your configuration for the base CoCoME deployment. -->
 
 				<logic.registry.protocol>http</logic.registry.protocol>
-				<logic.registry.host>cocome</logic.registry.host>
-				<logic.registry.httpPort>8480</logic.registry.httpPort>
+				<logic.registry.host>registry</logic.registry.host>
+				<logic.registry.httpPort>8080</logic.registry.httpPort>
 				<logic.registry.baseDir />
 				<logic.registryService>/RegistryService</logic.registryService>
 
-				<!-- Configuration for the deployment of the pickup shop. Adjust these 
-					settings to match your intended setup, i.e. enter the domain, ports, etc. 
+				<!-- Configuration for the deployment of the pickup shop. Adjust these
+					settings to match your intended setup, i.e. enter the domain, ports, etc.
 					for the Glassfish instance on which the pickup shop should be deployed. -->
 
 				<pickup.domain>cocome-pickup</pickup.domain>
-				<pickup.host>localhost</pickup.host>
+				<pickup.host>cloud-web-shop</pickup.host>
 				<pickup.user>admin</pickup.user>
-				<pickup.password></pickup.password>
-				<pickup.httpPort>8580</pickup.httpPort>
-				<pickup.adminPort>8548</pickup.adminPort>
+				<pickup.password>admin</pickup.password>
+				<pickup.httpPort>8080</pickup.httpPort>
+				<pickup.adminPort>4848</pickup.adminPort>
 			</properties>
 		</profile>
 <profile>
